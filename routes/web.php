@@ -16,6 +16,9 @@ Route::get( '/login-check', [App\Http\Controllers\Auth\AdminLoginController::cla
 // Route::get( '/reg', [App\Http\Controllers\Auth\AdminLoginController::class, 'register']);
 Route::get('/reg',[RegisterController::class, 'register']);
 Route::post('/register-store',[RegisterController::class, 'store']);
+Route::get('/reset-pass',function(){
+    return view('layouts.admin_app');
+});
 
 // auth verify false
 Auth::routes( ['verify' => false] );

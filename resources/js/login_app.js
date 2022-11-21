@@ -16,8 +16,8 @@ import crud_mixin from "./mixins/crud"
 import store from './store'
 
 /** login page */
-import login from './views/auth/login.vue'
-import register from './views/auth/register.vue'
+// import login from './views/auth/login.vue'
+// import register from './views/auth/register.vue'
 
 /** app initial */
 const app = createApp({

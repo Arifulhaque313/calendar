@@ -67,9 +67,9 @@ class AdminLoginController extends Controller {
                 }
             }
         } else if ( $request->isMethod( 'get' ) ) {
-            return view( 'layouts.login_app' );
+            return view( 'layouts.admin_app' );
         } else {
-            return view( 'layouts.login_app' );
+            return view( 'layouts.admin_app' );
         }
     }
 

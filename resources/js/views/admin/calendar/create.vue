@@ -61,7 +61,7 @@ export default {
         
       },
       timezone:[{name: 'Dhaka-Bangladesh', value : 'dhaka-bangladesh'},{name: 'New-York USA', value : 'new-york-america'}],
-      getTheme:[{name: '', value : 'new-york'}]
+      getTheme:[{name: 'Dark Night', value : 'dark-night'},{name:'Day Light', value : 'day-light'}]
       
     };
   },

@@ -70,7 +70,8 @@
                     </div>
 
                     <div>
-                      <a href="/nsl-login">Already have a accout? Sign-up here</a>
+                      <!-- <a href="/nsl-login">Already have a accout? Sign-up here</a> -->
+                      <router-link :to="{name: 'login'}">Already have a accout? Sign-in here</router-link>
                     </div>
 
                     <div class="button">
@@ -123,14 +124,18 @@ export default {
             .then((res) => {
               if (res.status == 200) {
                 this.$toast(res.data.message, "success");
-                window.location.href = this.$root.baseurl + "/nsl-login";
+                
+                setTimeout(function(){
+                  // alert('hello world');
+                  window.location.href = this.$root.baseurl + "/nsl-login";
+                }, 4000);
               } else {
                 this.$toast(res.data.message, "error");
               }
             })
             .catch((error) => {
-              this.$root.spinner = false;
               this.$toast("Something went wrong, please try again", "error");
+              this.$root.spinner = false;
             });
         }
       });

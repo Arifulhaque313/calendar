@@ -55,8 +55,8 @@
                     </div>
 
                     <div>
-                      <a href="/reg">sign-up here</a>
-                      <router-link :to="{name: 'reg'}">d</router-link>
+                      <!-- <a href="/reg">sign-up here</a> -->
+                      <router-link :to="{name: 'reg'}">sign-up here</router-link>
                     </div>
 
                     <div class="button">

@@ -50,7 +50,7 @@ class RegisterController extends Controller
      */
     
     public function register(){
-        return view( 'layouts.Register' );
+        return view( 'layouts.admin_app' );
     }
 
 
