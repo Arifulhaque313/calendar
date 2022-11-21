@@ -2,8 +2,8 @@ import { createRouter, createWebHistory } from "vue-router";
 
 /** router define */
 const routes = [
-    { path: '/nsl-login', name: 'login', component: () => import('./../views/auth/login') },
-    { path: '/reg', name: 'reg', component: () => import('./../views/auth/register')},
+    { path: '/nsl-login', name: 'login', component: () => import('./../views/auth/login2') },
+    { path: '/reg', name: 'reg', component: () => import('./../views/auth/register2')},
     { path: '/reset-pass', name: 'resetpass', component: () => import('./../views/auth/reset')},
     
     {

@@ -23,6 +23,7 @@ mix.styles([
     'resources/js/assets/admin/css/bootstrap.min.css',
     'resources/js/assets/admin/css/smooth-scrollbar.css',
     'resources/js/assets/admin/css/main.css',
+    'resources/js/assets/admin/css/style.css',
     'resources/js/assets/admin/css/responsive.css',
     'resources/js/assets/admin/css/responsive.css',
 ], 'public/css/admin_layouts.css');

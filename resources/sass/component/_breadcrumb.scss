@@ -1,0 +1,67 @@
+// @import "../variable/color";
+
+.bread-crumb {
+
+    .container {
+        position: relative;
+    }
+
+    .bread-crumb-bg {
+        .text {
+            background-color: #F1F1F1;
+            padding: 15px 24px 15px 46px;
+            border-radius: 12px;
+            margin-bottom: 33px;
+            position: relative;
+
+            h1 {
+                font-family: 'Nunito', sans-serif;
+                @include font(30px, 700);
+                color: #11175D;
+                // margin-bottom: 13px;
+            }
+
+            ul {
+                position: absolute;
+                top: 20px;
+                right: 0;
+
+                li {
+                    display: inline-block;
+                    font-size: 16px;
+                    // text-transform: uppercase;
+                    font-weight: 600;
+                    color: #11175D;
+                    position: relative;
+                    padding-right: 20px;
+                    margin-right: 7px;
+
+                    a {
+                        color: #5F35F5;
+                    }
+
+                    &::before {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        content: "/";
+                        color: $black;
+                    }
+                }
+
+                li:last-child {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .image {
+            position: absolute;
+            bottom: -126px;
+            right: 0;
+            width: 328px;
+        }
+    }
+}

@@ -6,3 +6,8 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+@import "./common/common";
+@import "./pages/home";
+@import "./pages/registration";
+@import "./pages/login";
